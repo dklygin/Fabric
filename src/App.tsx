@@ -273,7 +273,7 @@ function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                className="font-sans text-base font-medium tracking-[0.1em] uppercase text-charcoal/70 hover:text-accent transition-colors duration-300"
+                className="font-sans text-base font-medium tracking-[0.1em] uppercase text-charcoal/70 hover:text-primary transition-colors duration-300"
               >
                 {item.name}
               </a>
@@ -304,7 +304,7 @@ function Header() {
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="block font-sans text-lg tracking-[0.1em] uppercase text-charcoal hover:text-accent transition-colors"
+                className="block font-sans text-lg tracking-[0.1em] uppercase text-charcoal hover:text-primary transition-colors"
               >
                 {item.name}
               </a>
@@ -333,14 +333,14 @@ function Hero() {
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
         <div className="animate-fade-in-up">
           {/* Elegant backdrop with accent border */}
-          <div className="relative bg-gradient-to-br from-charcoal/95 via-charcoal/90 to-charcoal/95 backdrop-blur-md p-10 md:p-16 lg:p-20 border-2 border-accent/40 shadow-2xl">
+          <div className="relative bg-gradient-to-br from-charcoal/95 via-charcoal/90 to-charcoal/95 backdrop-blur-md p-10 md:p-16 lg:p-20 border-2 border-primary/40 shadow-2xl">
             {/* Decorative corners */}
-            <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-accent"></div>
-            <div className="absolute top-0 right-0 w-12 h-12 border-t-2 border-r-2 border-accent"></div>
-            <div className="absolute bottom-0 left-0 w-12 h-12 border-b-2 border-l-2 border-accent"></div>
-            <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-accent"></div>
+            <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-primary"></div>
+            <div className="absolute top-0 right-0 w-12 h-12 border-t-2 border-r-2 border-primary"></div>
+            <div className="absolute bottom-0 left-0 w-12 h-12 border-b-2 border-l-2 border-primary"></div>
+            <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-primary"></div>
 
-          <p className="text-accent-light font-sans text-base md:text-lg tracking-[0.4em] uppercase mb-8">
+          <p className="text-primary-light font-sans text-base md:text-lg tracking-[0.4em] uppercase mb-8">
             Ателье Премиум класса · Алматы
           </p>            
             <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-semibold text-white mb-8 leading-[1.1] tracking-wide">
@@ -359,7 +359,7 @@ function Hero() {
             
             <a
               href="#услуги"
-              className="inline-block px-12 py-4 bg-accent text-white hover:bg-accent-dark transition-all duration-500 text-base tracking-[0.3em] uppercase font-sans font-medium shadow-lg hover:shadow-xl"
+              className="inline-block px-12 py-4 bg-primary text-white hover:bg-primary-dark transition-all duration-500 text-base tracking-[0.3em] uppercase font-sans font-medium shadow-lg hover:shadow-xl"
             >
               Наши услуги
             </a>
@@ -369,7 +369,7 @@ function Hero() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
-        <div className="w-[1px] h-12 bg-gradient-to-b from-transparent to-accent animate-pulse"></div>
+        <div className="w-[1px] h-12 bg-gradient-to-b from-transparent to-primary animate-pulse"></div>
       </div>
     </section>
   );
@@ -425,7 +425,7 @@ function AnnouncementsBanner() {
             <div className="flex items-center gap-3 mb-6">
               <span className={`px-3 py-1 text-base tracking-[0.2em] uppercase font-sans font-medium ${
                 announcements[activeIndex].type === 'greeting'
-                  ? 'bg-accent/20 text-accent-light border border-accent/30'
+                  ? 'bg-primary/20 text-primary-light border border-primary/30'
                   : 'bg-white/10 text-white/70 border border-white/20'
               }`}>
                 {announcements[activeIndex].type === 'greeting' ? 'Поздравление' : 'Объявление'}
@@ -463,7 +463,7 @@ function AnnouncementsBanner() {
                   className="group flex items-center gap-2"
                 >
                   <span className={`h-[2px] transition-all duration-500 ${
-                    activeIndex === index ? 'w-10 bg-accent' : 'w-5 bg-white/20 group-hover:bg-white/40'
+                    activeIndex === index ? 'w-10 bg-primary' : 'w-5 bg-white/20 group-hover:bg-white/40'
                   }`}></span>
                 </button>
               ))}
@@ -503,7 +503,7 @@ function Services() {
     <section id="услуги" className="py-24 md:py-32 bg-ivory">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <p className="text-accent text-base tracking-[0.4em] uppercase mb-4 font-sans">Что мы предлагаем</p>
+          <p className="text-primary text-base tracking-[0.4em] uppercase mb-4 font-sans">Что мы предлагаем</p>
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-charcoal mb-5 tracking-wide">Наши услуги</h2>
           <div className="gold-divider w-20 mx-auto mb-6"></div>
           <p className="text-charcoal/60 max-w-xl mx-auto text-base leading-relaxed">
@@ -532,7 +532,7 @@ function Services() {
                   <div className="icon-elegant mb-4">
                     <LuxuryIcon name={service.icon} className="w-5 h-5" />
                   </div>
-                  <h3 className="font-serif text-2xl lg:text-3xl font-semibold text-charcoal mb-3 group-hover:text-accent-dark transition-colors leading-snug">
+                  <h3 className="font-serif text-2xl lg:text-3xl font-semibold text-charcoal mb-3 group-hover:text-primary-dark transition-colors leading-snug">
                     {service.title}
                   </h3>
                   <p className="text-charcoal/55 text-base leading-relaxed">
@@ -561,14 +561,14 @@ function About() {
               className="w-full h-[450px] lg:h-[550px] object-cover rounded-sm"
             />
             <div className="absolute -bottom-6 -right-4 md:-right-6 bg-charcoal text-white p-6 rounded-sm">
-              <p className="font-serif text-3xl font-semibold text-accent-light">25+</p>
+              <p className="font-serif text-3xl font-semibold text-primary-light">25+</p>
               <p className="text-base tracking-[0.2em] uppercase text-white/60 mt-1 font-sans">лет опыта</p>
             </div>
           </div>
 
           {/* Text */}
           <div>
-            <p className="text-accent text-base tracking-[0.4em] uppercase mb-4 font-sans">О нашем ателье</p>
+            <p className="text-primary text-base tracking-[0.4em] uppercase mb-4 font-sans">О нашем ателье</p>
             <h2 className="font-serif text-4xl md:text-5xl font-semibold text-charcoal mb-6 leading-tight tracking-wide">
               Искусство создания совершенства
             </h2>
@@ -588,15 +588,15 @@ function About() {
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
               <div className="text-center p-4 sm:p-5 bg-white/60 border border-sand rounded-sm">
-                <p className="font-serif text-xl sm:text-2xl font-semibold text-accent-dark">1998</p>
+                <p className="font-serif text-xl sm:text-2xl font-semibold text-primary-dark">1998</p>
                 <p className="text-xs sm:text-sm text-charcoal/50 mt-1 tracking-wider uppercase font-sans">Год основания</p>
               </div>
               <div className="text-center p-4 sm:p-5 bg-white/60 border border-sand rounded-sm">
-                <p className="font-serif text-xl sm:text-2xl font-semibold text-accent-dark">10 000+</p>
+                <p className="font-serif text-xl sm:text-2xl font-semibold text-primary-dark">10 000+</p>
                 <p className="text-xs sm:text-sm text-charcoal/50 mt-1 tracking-wider uppercase font-sans">Наименований</p>
               </div>
               <div className="text-center p-4 sm:p-5 bg-white/60 border border-sand rounded-sm">
-                <p className="font-serif text-xl sm:text-2xl font-semibold text-accent-dark">4</p>
+                <p className="font-serif text-xl sm:text-2xl font-semibold text-primary-dark">4</p>
                 <p className="text-xs sm:text-sm text-charcoal/50 mt-1 tracking-wider uppercase font-sans">Страны</p>
               </div>
             </div>
@@ -612,7 +612,7 @@ function Fabrics() {
     <section id="ткани" className="py-24 md:py-32 bg-ivory">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <p className="text-accent text-base tracking-[0.4em] uppercase mb-4 font-sans">Салон тканей</p>
+          <p className="text-primary text-base tracking-[0.4em] uppercase mb-4 font-sans">Салон тканей</p>
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-charcoal mb-5 tracking-wide">Ткани из Европы</h2>
           <div className="gold-divider w-20 mx-auto mb-6"></div>
           <p className="text-charcoal/60 max-w-xl mx-auto text-base leading-relaxed">
@@ -655,7 +655,7 @@ function Gallery() {
     <section id="работы" className="py-24 md:py-32 bg-warm-gray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <p className="text-accent text-base tracking-[0.4em] uppercase mb-4 font-sans">Портфолио</p>
+          <p className="text-primary text-base tracking-[0.4em] uppercase mb-4 font-sans">Портфолио</p>
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-charcoal mb-5 tracking-wide">Наши работы</h2>
           <div className="gold-divider w-20 mx-auto mb-6"></div>
           <p className="text-charcoal/60 max-w-xl mx-auto text-base leading-relaxed">
@@ -688,7 +688,7 @@ function Contacts() {
     <section id="контакты" className="py-24 md:py-32 bg-charcoal text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <p className="text-accent-light text-base tracking-[0.4em] uppercase mb-4 font-sans">Свяжитесь с нами</p>
+          <p className="text-primary-light text-base tracking-[0.4em] uppercase mb-4 font-sans">Свяжитесь с нами</p>
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-white mb-5 tracking-wide">Контакты</h2>
           <div className="gold-divider w-20 mx-auto mb-6"></div>
         </div>
@@ -739,7 +739,7 @@ function Contacts() {
                 </div>
                 <div>
                   <p className="font-sans text-base tracking-wider uppercase text-white/80 mb-1">Сайт</p>
-                  <a href="https://premium-fabric.kz" target="_blank" rel="noopener noreferrer" className="text-accent-light text-base hover:text-accent transition-colors">
+                  <a href="https://premium-fabric.kz" target="_blank" rel="noopener noreferrer" className="text-primary-light text-base hover:text-primary transition-colors">
                     premium-fabric.kz
                   </a>
                 </div>
@@ -771,13 +771,13 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <span className="font-sans text-lg font-semibold text-accent-light tracking-[0.15em]">PREMIUM FABRIC</span>
+            <span className="font-sans text-lg font-semibold text-primary-light tracking-[0.15em]">PREMIUM FABRIC</span>
           </div>
           <p className="text-base text-white/30 text-center tracking-wider font-sans">
             © 1998–2026 Ателье Премиум класса · Алматы · Все права защищены
           </p>
           <div className="flex gap-6">
-            <a href="https://premium-fabric.kz" target="_blank" rel="noopener noreferrer" className="text-base text-white/30 hover:text-accent-light transition-colors tracking-wider font-sans">
+            <a href="https://premium-fabric.kz" target="_blank" rel="noopener noreferrer" className="text-base text-white/30 hover:text-primary-light transition-colors tracking-wider font-sans">
               premium-fabric.kz
             </a>
           </div>
