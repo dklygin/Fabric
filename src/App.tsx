@@ -359,7 +359,7 @@ function Hero() {
             
             <a
               href="#услуги"
-              className="inline-block px-12 py-4 bg-accent text-white hover:bg-accent-dark transition-all duration-500 text-sm tracking-[0.3em] uppercase font-sans font-medium shadow-lg hover:shadow-xl"
+              className="inline-block px-12 py-4 bg-accent text-white hover:bg-accent-dark transition-all duration-500 text-base tracking-[0.3em] uppercase font-sans font-medium shadow-lg hover:shadow-xl"
             >
               Наши услуги
             </a>
@@ -423,14 +423,14 @@ function AnnouncementsBanner() {
           <div className="lg:col-span-3 flex flex-col justify-center p-8 md:p-12 lg:pl-16 relative">
             {/* Label */}
             <div className="flex items-center gap-3 mb-6">
-              <span className={`px-3 py-1 text-xs tracking-[0.2em] uppercase font-sans font-medium ${
+              <span className={`px-3 py-1 text-base tracking-[0.2em] uppercase font-sans font-medium ${
                 announcements[activeIndex].type === 'greeting'
                   ? 'bg-accent/20 text-accent-light border border-accent/30'
                   : 'bg-white/10 text-white/70 border border-white/20'
               }`}>
                 {announcements[activeIndex].type === 'greeting' ? 'Поздравление' : 'Объявление'}
               </span>
-              <span className="text-white/40 text-sm font-sans tracking-wider">
+              <span className="text-white/40 text-base font-sans tracking-wider">
                 {announcements[activeIndex].date}
               </span>
             </div>
@@ -467,7 +467,7 @@ function AnnouncementsBanner() {
                   }`}></span>
                 </button>
               ))}
-              <span className="text-white/30 text-sm font-sans ml-2">
+              <span className="text-white/30 text-base font-sans ml-2">
                 {String(activeIndex + 1).padStart(2, '0')} / {String(announcements.length).padStart(2, '0')}
               </span>
             </div>
@@ -503,7 +503,7 @@ function Services() {
     <section id="услуги" className="py-24 md:py-32 bg-ivory">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <p className="text-accent text-sm tracking-[0.4em] uppercase mb-4 font-sans">Что мы предлагаем</p>
+          <p className="text-accent text-base tracking-[0.4em] uppercase mb-4 font-sans">Что мы предлагаем</p>
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-charcoal mb-5 tracking-wide">Наши услуги</h2>
           <div className="gold-divider w-20 mx-auto mb-6"></div>
           <p className="text-charcoal/60 max-w-xl mx-auto text-base leading-relaxed">
@@ -562,13 +562,13 @@ function About() {
             />
             <div className="absolute -bottom-6 -right-4 md:-right-6 bg-charcoal text-white p-6 rounded-sm">
               <p className="font-serif text-3xl font-semibold text-accent-light">25+</p>
-              <p className="text-sm tracking-[0.2em] uppercase text-white/60 mt-1 font-sans">лет опыта</p>
+              <p className="text-base tracking-[0.2em] uppercase text-white/60 mt-1 font-sans">лет опыта</p>
             </div>
           </div>
 
           {/* Text */}
           <div>
-            <p className="text-accent text-sm tracking-[0.4em] uppercase mb-4 font-sans">О нашем ателье</p>
+            <p className="text-accent text-base tracking-[0.4em] uppercase mb-4 font-sans">О нашем ателье</p>
             <h2 className="font-serif text-4xl md:text-5xl font-semibold text-charcoal mb-6 leading-tight tracking-wide">
               Искусство создания совершенства
             </h2>
@@ -589,15 +589,15 @@ function About() {
             <div className="grid grid-cols-3 gap-4">
               <div className="text-center p-5 bg-white/60 border border-sand rounded-sm">
                 <p className="font-serif text-3xl font-semibold text-accent-dark">1998</p>
-                <p className="text-xs text-charcoal/50 mt-1 tracking-wider uppercase font-sans">Год основания</p>
+                <p className="text-base text-charcoal/50 mt-1 tracking-wider uppercase font-sans">Год основания</p>
               </div>
               <div className="text-center p-5 bg-white/60 border border-sand rounded-sm">
                 <p className="font-serif text-3xl font-semibold text-accent-dark">10 000+</p>
-                <p className="text-xs text-charcoal/50 mt-1 tracking-wider uppercase font-sans">Наименований</p>
+                <p className="text-base text-charcoal/50 mt-1 tracking-wider uppercase font-sans">Наименований</p>
               </div>
               <div className="text-center p-5 bg-white/60 border border-sand rounded-sm">
                 <p className="font-serif text-3xl font-semibold text-accent-dark">4</p>
-                <p className="text-xs text-charcoal/50 mt-1 tracking-wider uppercase font-sans">Страны</p>
+                <p className="text-base text-charcoal/50 mt-1 tracking-wider uppercase font-sans">Страны</p>
               </div>
             </div>
           </div>
@@ -612,7 +612,7 @@ function Fabrics() {
     <section id="ткани" className="py-24 md:py-32 bg-ivory">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <p className="text-accent text-sm tracking-[0.4em] uppercase mb-4 font-sans">Салон тканей</p>
+          <p className="text-accent text-base tracking-[0.4em] uppercase mb-4 font-sans">Салон тканей</p>
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-charcoal mb-5 tracking-wide">Ткани из Европы</h2>
           <div className="gold-divider w-20 mx-auto mb-6"></div>
           <p className="text-charcoal/60 max-w-xl mx-auto text-base leading-relaxed">
@@ -655,7 +655,7 @@ function Gallery() {
     <section id="работы" className="py-24 md:py-32 bg-warm-gray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <p className="text-accent text-sm tracking-[0.4em] uppercase mb-4 font-sans">Портфолио</p>
+          <p className="text-accent text-base tracking-[0.4em] uppercase mb-4 font-sans">Портфолио</p>
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-charcoal mb-5 tracking-wide">Наши работы</h2>
           <div className="gold-divider w-20 mx-auto mb-6"></div>
           <p className="text-charcoal/60 max-w-xl mx-auto text-base leading-relaxed">
@@ -688,7 +688,7 @@ function Contacts() {
     <section id="контакты" className="py-24 md:py-32 bg-charcoal text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <p className="text-accent-light text-sm tracking-[0.4em] uppercase mb-4 font-sans">Свяжитесь с нами</p>
+          <p className="text-accent-light text-base tracking-[0.4em] uppercase mb-4 font-sans">Свяжитесь с нами</p>
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-white mb-5 tracking-wide">Контакты</h2>
           <div className="gold-divider w-20 mx-auto mb-6"></div>
         </div>
@@ -773,11 +773,11 @@ function Footer() {
           <div className="flex items-center gap-2">
             <span className="font-sans text-lg font-semibold text-accent-light tracking-[0.15em]">PREMIUM FABRIC</span>
           </div>
-          <p className="text-sm text-white/30 text-center tracking-wider font-sans">
+          <p className="text-base text-white/30 text-center tracking-wider font-sans">
             © 1998–2026 Ателье Премиум класса · Алматы · Все права защищены
           </p>
           <div className="flex gap-6">
-            <a href="https://premium-fabric.kz" target="_blank" rel="noopener noreferrer" className="text-sm text-white/30 hover:text-accent-light transition-colors tracking-wider font-sans">
+            <a href="https://premium-fabric.kz" target="_blank" rel="noopener noreferrer" className="text-base text-white/30 hover:text-accent-light transition-colors tracking-wider font-sans">
               premium-fabric.kz
             </a>
           </div>
