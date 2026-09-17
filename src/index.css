@@ -1,16 +1,18 @@
 @import "tailwindcss";
 
 @theme {
-  --color-accent: #8C56D4;
-  --color-accent-light: #DC95FF;
-  --color-accent-dark: #6B3FB8;
-  --color-accent-soft: #FFBEFB;
-  --color-cream: #FFF4BF;
-  --color-ivory: #FFFAED;
-  --color-charcoal: #2D1B4E;
-  --color-anthracite: #1A0F2E;
-  --color-warm-gray: #F5E6FF;
-  --color-sand: #E8D5F5;
+  --color-primary: #D4C8BC;
+  --color-primary-light: #E8DFD5;
+  --color-primary-dark: #8B7D6F;
+  --color-accent: #6B5B4F;
+  --color-accent-light: #A89888;
+  --color-accent-dark: #4A3F36;
+  --color-cream: #F5F0EB;
+  --color-ivory: #FAF7F4;
+  --color-charcoal: #3D342C;
+  --color-anthracite: #2A241E;
+  --color-warm-gray: #EDE7E0;
+  --color-sand: #DDD5CB;
   --font-serif: 'Cormorant Garamond', 'Times New Roman', serif;
   --font-sans: 'Montserrat', 'Helvetica Neue', sans-serif;
 }
@@ -37,7 +39,6 @@ body {
   font-family: var(--font-sans);
 }
 
-/* Luxury animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -62,23 +63,20 @@ body {
   animation: fadeIn 1s ease-out forwards;
 }
 
-/* Accent divider */
 .gold-divider {
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
 }
 
-/* Elegant card hover */
 .luxury-card {
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .luxury-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(45, 27, 78, 0.08);
+  box-shadow: 0 20px 40px rgba(61, 52, 44, 0.1);
 }
 
-/* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -88,11 +86,10 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-accent);
+  background: var(--color-accent-light);
   border-radius: 3px;
 }
 
-/* Elegant icon container */
 .icon-elegant {
   width: 48px;
   height: 48px;
