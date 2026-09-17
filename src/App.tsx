@@ -326,34 +326,34 @@ function Hero() {
           alt="Ателье Premium Fabric"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-charcoal/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-ivory/80 via-cream/70 to-gold-soft/80"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
         <div className="animate-fade-in-up">
-          {/* Elegant backdrop with accent border */}
-          <div className="relative bg-gradient-to-br from-charcoal/95 via-charcoal/90 to-charcoal/95 backdrop-blur-md p-10 md:p-16 lg:p-20 border-2 border-primary/40 shadow-2xl">
+          {/* Elegant backdrop with light gradient */}
+          <div className="relative bg-gradient-to-br from-ivory/95 via-cream/90 to-gold-soft/95 backdrop-blur-md p-10 md:p-16 lg:p-20 border-2 border-primary/30 shadow-2xl">
             {/* Decorative corners */}
             <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-primary"></div>
             <div className="absolute top-0 right-0 w-12 h-12 border-t-2 border-r-2 border-primary"></div>
             <div className="absolute bottom-0 left-0 w-12 h-12 border-b-2 border-l-2 border-primary"></div>
             <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-primary"></div>
 
-          <p className="text-primary-light font-sans text-base md:text-lg tracking-[0.4em] uppercase mb-8">
+          <p className="text-primary font-sans text-base md:text-lg tracking-[0.4em] uppercase mb-8">
             Ателье Премиум класса · Алматы
           </p>            
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-semibold text-white mb-8 leading-[1.1] tracking-wide">
+            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-semibold text-charcoal mb-8 leading-[1.1] tracking-wide">
               PREMIUM FABRIC
             </h1>
             
             <div className="gold-divider w-32 mx-auto mb-8"></div>
             
-            <p className="text-white text-xl md:text-2xl font-light max-w-2xl mx-auto mb-4 leading-relaxed font-serif italic">
+            <p className="text-charcoal/80 text-xl md:text-2xl font-light max-w-2xl mx-auto mb-4 leading-relaxed font-serif italic">
               Индивидуальный пошив и ремонт одежды с 1998 года
             </p>
             
-            <p className="text-white/70 text-base md:text-lg font-light max-w-xl mx-auto mb-12 leading-relaxed">
+            <p className="text-charcoal/60 text-base md:text-lg font-light max-w-xl mx-auto mb-12 leading-relaxed">
               Более 10 000 наименований тканей и фурнитуры из Италии, Франции, Англии и Швейцарии
             </p>
             
@@ -685,19 +685,19 @@ function Gallery() {
 
 function Contacts() {
   return (
-    <section id="контакты" className="py-24 md:py-32 bg-charcoal text-white">
+    <section id="контакты" className="py-24 md:py-32 bg-gradient-to-b from-cream to-gold-soft">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <p className="text-primary-light text-base tracking-[0.4em] uppercase mb-4 font-sans">Свяжитесь с нами</p>
-          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-white mb-5 tracking-wide">Контакты</h2>
+          <p className="text-primary text-base tracking-[0.4em] uppercase mb-4 font-sans">Свяжитесь с нами</p>
+          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-charcoal mb-5 tracking-wide">Контакты</h2>
           <div className="gold-divider w-20 mx-auto mb-6"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Contact info */}
           <div>
-            <h3 className="font-serif text-2xl font-semibold mb-6 text-white">Будем рады видеть вас</h3>
-            <p className="text-white/50 leading-relaxed mb-10 text-base">
+            <h3 className="font-serif text-2xl font-semibold mb-6 text-charcoal">Будем рады видеть вас</h3>
+            <p className="text-charcoal/70 leading-relaxed mb-10 text-base">
               Запишитесь на консультацию, и наши мастера помогут создать идеальный образ. 
               Мы работаем по предварительной записи, чтобы уделить каждому клиенту максимум внимания.
             </p>
@@ -708,8 +708,8 @@ function Contacts() {
                   <LuxuryIcon name="location" className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="font-sans text-base tracking-wider uppercase text-white/80 mb-1">Адрес</p>
-                  <p className="text-white/50 text-base">г. Алматы, Казахстан</p>
+                  <p className="font-sans text-base tracking-wider uppercase text-charcoal/80 mb-1">Адрес</p>
+                  <p className="text-charcoal/70 text-base">г. Алматы, Казахстан</p>
                 </div>
               </div>
 
@@ -718,8 +718,8 @@ function Contacts() {
                   <LuxuryIcon name="phone" className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="font-sans text-base tracking-wider uppercase text-white/80 mb-1">Телефон</p>
-                  <p className="text-white/50 text-base">Свяжитесь с нами для записи</p>
+                  <p className="font-sans text-base tracking-wider uppercase text-charcoal/80 mb-1">Телефон</p>
+                  <p className="text-charcoal/70 text-base">Свяжитесь с нами для записи</p>
                 </div>
               </div>
 
@@ -728,8 +728,8 @@ function Contacts() {
                   <LuxuryIcon name="clock" className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="font-sans text-base tracking-wider uppercase text-white/80 mb-1">Время работы</p>
-                  <p className="text-white/50 text-base">Пн-Сб: по предварительной записи</p>
+                  <p className="font-sans text-base tracking-wider uppercase text-charcoal/80 mb-1">Время работы</p>
+                  <p className="text-charcoal/70 text-base">Пн-Сб: по предварительной записи</p>
                 </div>
               </div>
 
@@ -738,8 +738,8 @@ function Contacts() {
                   <LuxuryIcon name="globe" className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="font-sans text-base tracking-wider uppercase text-white/80 mb-1">Сайт</p>
-                  <a href="https://premium-fabric.kz" target="_blank" rel="noopener noreferrer" className="text-primary-light text-base hover:text-primary transition-colors">
+                  <p className="font-sans text-base tracking-wider uppercase text-charcoal/80 mb-1">Сайт</p>
+                  <a href="https://premium-fabric.kz" target="_blank" rel="noopener noreferrer" className="text-primary text-base hover:text-primary-dark transition-colors">
                     premium-fabric.kz
                   </a>
                 </div>
@@ -748,7 +748,7 @@ function Contacts() {
           </div>
 
           {/* Map */}
-          <div className="rounded-sm overflow-hidden border border-white/10">
+          <div className="rounded-sm overflow-hidden border border-primary/20 shadow-lg">
             <iframe
               src="https://yandex.ru/map-widget/v1/?ll=76.950701%2C43.228412&z=17&um=constructor%3A2cb65235e7fb138a466d8486c71237c146b7bb5ed61baa3bdec7caed109fcedb"
               width="100%"
