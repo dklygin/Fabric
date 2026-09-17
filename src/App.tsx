@@ -400,7 +400,7 @@ function AnnouncementsBanner() {
   };
 
   return (
-    <section id="объявления" className="relative bg-charcoal overflow-hidden">
+    <section id="объявления" className="relative bg-gradient-to-b from-cream to-gold-soft overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-5 min-h-[320px]">
           {/* Image side */}
@@ -415,8 +415,8 @@ function AnnouncementsBanner() {
                 }`}
               />
             ))}
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent to-charcoal hidden lg:block"></div>
-            <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent lg:hidden"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent to-cream hidden lg:block"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-cream/60 to-transparent lg:hidden"></div>
           </div>
 
           {/* Content side */}
@@ -425,12 +425,12 @@ function AnnouncementsBanner() {
             <div className="flex items-center gap-3 mb-6">
               <span className={`px-3 py-1 text-base tracking-[0.2em] uppercase font-sans font-medium ${
                 announcements[activeIndex].type === 'greeting'
-                  ? 'bg-primary/20 text-primary-light border border-primary/30'
-                  : 'bg-white/10 text-white/70 border border-white/20'
+                  ? 'bg-primary/20 text-primary-dark border border-primary/30'
+                  : 'bg-charcoal/10 text-charcoal/70 border border-charcoal/20'
               }`}>
                 {announcements[activeIndex].type === 'greeting' ? 'Поздравление' : 'Объявление'}
               </span>
-              <span className="text-white/40 text-base font-sans tracking-wider">
+              <span className="text-charcoal/60 text-base font-sans tracking-wider">
                 {announcements[activeIndex].date}
               </span>
             </div>
@@ -445,10 +445,10 @@ function AnnouncementsBanner() {
                     : 'opacity-0 translate-y-4 absolute pointer-events-none'
                 }`}
               >
-                <h3 className="font-serif text-3xl md:text-4xl font-semibold text-white mb-4 leading-snug">
+                <h3 className="font-serif text-3xl md:text-4xl font-semibold text-charcoal mb-4 leading-snug">
                   {item.title}
                 </h3>
-                <p className="text-white/60 text-base md:text-lg leading-relaxed max-w-lg font-light">
+                <p className="text-charcoal/70 text-base md:text-lg leading-relaxed max-w-lg font-light">
                   {item.text}
                 </p>
               </div>
@@ -463,11 +463,11 @@ function AnnouncementsBanner() {
                   className="group flex items-center gap-2"
                 >
                   <span className={`h-[2px] transition-all duration-500 ${
-                    activeIndex === index ? 'w-10 bg-primary' : 'w-5 bg-white/20 group-hover:bg-white/40'
+                    activeIndex === index ? 'w-10 bg-primary' : 'w-5 bg-charcoal/20 group-hover:bg-charcoal/40'
                   }`}></span>
                 </button>
               ))}
-              <span className="text-white/30 text-base font-sans ml-2">
+              <span className="text-charcoal/50 text-base font-sans ml-2">
                 {String(activeIndex + 1).padStart(2, '0')} / {String(announcements.length).padStart(2, '0')}
               </span>
             </div>
