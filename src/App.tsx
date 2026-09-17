@@ -586,18 +586,18 @@ function About() {
               <strong className="text-charcoal font-medium">Стандарт</strong>. На все виды услуг предоставляется гарантия.
             </p>
             
-            <div className="grid grid-cols-3 gap-4">
-              <div className="text-center p-5 bg-white/60 border border-sand rounded-sm">
-                <p className="font-serif text-2xl font-semibold text-accent-dark">1998</p>
-                <p className="text-sm text-charcoal/50 mt-1 tracking-wider uppercase font-sans">Год основания</p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+              <div className="text-center p-4 sm:p-5 bg-white/60 border border-sand rounded-sm">
+                <p className="font-serif text-xl sm:text-2xl font-semibold text-accent-dark">1998</p>
+                <p className="text-xs sm:text-sm text-charcoal/50 mt-1 tracking-wider uppercase font-sans">Год основания</p>
               </div>
-              <div className="text-center p-5 bg-white/60 border border-sand rounded-sm">
-                <p className="font-serif text-2xl font-semibold text-accent-dark">10 000+</p>
-                <p className="text-sm text-charcoal/50 mt-1 tracking-wider uppercase font-sans">Наименований</p>
+              <div className="text-center p-4 sm:p-5 bg-white/60 border border-sand rounded-sm">
+                <p className="font-serif text-xl sm:text-2xl font-semibold text-accent-dark">10 000+</p>
+                <p className="text-xs sm:text-sm text-charcoal/50 mt-1 tracking-wider uppercase font-sans">Наименований</p>
               </div>
-              <div className="text-center p-5 bg-white/60 border border-sand rounded-sm">
-                <p className="font-serif text-2xl font-semibold text-accent-dark">4</p>
-                <p className="text-sm text-charcoal/50 mt-1 tracking-wider uppercase font-sans">Страны</p>
+              <div className="text-center p-4 sm:p-5 bg-white/60 border border-sand rounded-sm">
+                <p className="font-serif text-xl sm:text-2xl font-semibold text-accent-dark">4</p>
+                <p className="text-xs sm:text-sm text-charcoal/50 mt-1 tracking-wider uppercase font-sans">Страны</p>
               </div>
             </div>
           </div>
