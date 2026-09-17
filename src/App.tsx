@@ -259,7 +259,7 @@ function Header() {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'bg-ivory border-b border-sand' : 'bg-ivory/95 backdrop-blur-sm'}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'gradient-header border-b border-primary-light/30' : 'gradient-header/95 backdrop-blur-sm'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <a href="#" className="flex items-center gap-2">
@@ -273,7 +273,7 @@ function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                className="font-sans text-base font-medium tracking-[0.1em] uppercase text-charcoal/70 hover:text-accent transition-colors duration-300"
+                className="font-sans text-base font-medium tracking-[0.1em] uppercase text-charcoal/70 hover:text-primary transition-colors duration-300"
               >
                 {item.name}
               </a>
@@ -297,14 +297,14 @@ function Header() {
 
       {/* Mobile menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-ivory border-t border-sand">
+        <div className="md:hidden gradient-header border-t border-primary-light/30">
           <div className="px-6 py-6 space-y-4">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="block font-sans text-lg tracking-[0.1em] uppercase text-charcoal hover:text-accent transition-colors"
+                className="block font-sans text-lg tracking-[0.1em] uppercase text-charcoal hover:text-primary transition-colors"
               >
                 {item.name}
               </a>
@@ -326,40 +326,40 @@ function Hero() {
           alt="Ателье Premium Fabric"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-charcoal/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-ivory/80 via-cream/70 to-gold-soft/80"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
         <div className="animate-fade-in-up">
-          {/* Elegant backdrop with accent border */}
-          <div className="relative bg-gradient-to-br from-charcoal/95 via-charcoal/90 to-charcoal/95 backdrop-blur-md p-10 md:p-16 lg:p-20 border-2 border-accent/40 shadow-2xl">
+          {/* Elegant backdrop with light gradient */}
+          <div className="relative bg-gradient-to-br from-ivory/95 via-cream/90 to-gold-soft/95 backdrop-blur-md p-10 md:p-16 lg:p-20 border-2 border-primary/30 shadow-2xl">
             {/* Decorative corners */}
-            <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-accent"></div>
-            <div className="absolute top-0 right-0 w-12 h-12 border-t-2 border-r-2 border-accent"></div>
-            <div className="absolute bottom-0 left-0 w-12 h-12 border-b-2 border-l-2 border-accent"></div>
-            <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-accent"></div>
+            <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-primary"></div>
+            <div className="absolute top-0 right-0 w-12 h-12 border-t-2 border-r-2 border-primary"></div>
+            <div className="absolute bottom-0 left-0 w-12 h-12 border-b-2 border-l-2 border-primary"></div>
+            <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-primary"></div>
 
-          <p className="text-accent-light font-sans text-base md:text-lg tracking-[0.4em] uppercase mb-8">
+          <p className="text-primary font-sans text-base md:text-lg tracking-[0.4em] uppercase mb-8">
             Ателье Премиум класса · Алматы
           </p>            
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-semibold text-white mb-8 leading-[1.1] tracking-wide">
+            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-semibold text-charcoal mb-8 leading-[1.1] tracking-wide">
               PREMIUM FABRIC
             </h1>
             
             <div className="gold-divider w-32 mx-auto mb-8"></div>
             
-            <p className="text-white text-xl md:text-2xl font-light max-w-2xl mx-auto mb-4 leading-relaxed font-serif italic">
+            <p className="text-charcoal/80 text-xl md:text-2xl font-light max-w-2xl mx-auto mb-4 leading-relaxed font-serif italic">
               Индивидуальный пошив и ремонт одежды с 1998 года
             </p>
             
-            <p className="text-white/70 text-base md:text-lg font-light max-w-xl mx-auto mb-12 leading-relaxed">
+            <p className="text-charcoal/60 text-base md:text-lg font-light max-w-xl mx-auto mb-12 leading-relaxed">
               Более 10 000 наименований тканей и фурнитуры из Италии, Франции, Англии и Швейцарии
             </p>
             
             <a
               href="#услуги"
-              className="inline-block px-12 py-4 bg-accent text-white hover:bg-accent-dark transition-all duration-500 text-base tracking-[0.3em] uppercase font-sans font-medium shadow-lg hover:shadow-xl"
+              className="inline-block px-12 py-4 bg-primary text-white hover:bg-primary-dark transition-all duration-500 text-base tracking-[0.3em] uppercase font-sans font-medium shadow-lg hover:shadow-xl"
             >
               Наши услуги
             </a>
@@ -369,7 +369,7 @@ function Hero() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
-        <div className="w-[1px] h-12 bg-gradient-to-b from-transparent to-accent animate-pulse"></div>
+        <div className="w-[1px] h-12 bg-gradient-to-b from-transparent to-primary animate-pulse"></div>
       </div>
     </section>
   );
@@ -400,7 +400,7 @@ function AnnouncementsBanner() {
   };
 
   return (
-    <section id="объявления" className="relative bg-charcoal overflow-hidden">
+    <section id="объявления" className="relative bg-gradient-to-b from-cream to-gold-soft overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-5 min-h-[320px]">
           {/* Image side */}
@@ -415,8 +415,8 @@ function AnnouncementsBanner() {
                 }`}
               />
             ))}
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent to-charcoal hidden lg:block"></div>
-            <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent lg:hidden"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent to-cream hidden lg:block"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-cream/60 to-transparent lg:hidden"></div>
           </div>
 
           {/* Content side */}
@@ -425,12 +425,12 @@ function AnnouncementsBanner() {
             <div className="flex items-center gap-3 mb-6">
               <span className={`px-3 py-1 text-base tracking-[0.2em] uppercase font-sans font-medium ${
                 announcements[activeIndex].type === 'greeting'
-                  ? 'bg-accent/20 text-accent-light border border-accent/30'
-                  : 'bg-white/10 text-white/70 border border-white/20'
+                  ? 'bg-primary/20 text-primary-dark border border-primary/30'
+                  : 'bg-charcoal/10 text-charcoal/70 border border-charcoal/20'
               }`}>
                 {announcements[activeIndex].type === 'greeting' ? 'Поздравление' : 'Объявление'}
               </span>
-              <span className="text-white/40 text-base font-sans tracking-wider">
+              <span className="text-charcoal/60 text-base font-sans tracking-wider">
                 {announcements[activeIndex].date}
               </span>
             </div>
@@ -445,10 +445,10 @@ function AnnouncementsBanner() {
                     : 'opacity-0 translate-y-4 absolute pointer-events-none'
                 }`}
               >
-                <h3 className="font-serif text-3xl md:text-4xl font-semibold text-white mb-4 leading-snug">
+                <h3 className="font-serif text-3xl md:text-4xl font-semibold text-charcoal mb-4 leading-snug">
                   {item.title}
                 </h3>
-                <p className="text-white/60 text-base md:text-lg leading-relaxed max-w-lg font-light">
+                <p className="text-charcoal/70 text-base md:text-lg leading-relaxed max-w-lg font-light">
                   {item.text}
                 </p>
               </div>
@@ -463,11 +463,11 @@ function AnnouncementsBanner() {
                   className="group flex items-center gap-2"
                 >
                   <span className={`h-[2px] transition-all duration-500 ${
-                    activeIndex === index ? 'w-10 bg-accent' : 'w-5 bg-white/20 group-hover:bg-white/40'
+                    activeIndex === index ? 'w-10 bg-primary' : 'w-5 bg-charcoal/20 group-hover:bg-charcoal/40'
                   }`}></span>
                 </button>
               ))}
-              <span className="text-white/30 text-base font-sans ml-2">
+              <span className="text-charcoal/50 text-base font-sans ml-2">
                 {String(activeIndex + 1).padStart(2, '0')} / {String(announcements.length).padStart(2, '0')}
               </span>
             </div>
@@ -503,7 +503,7 @@ function Services() {
     <section id="услуги" className="py-24 md:py-32 bg-ivory">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <p className="text-accent text-base tracking-[0.4em] uppercase mb-4 font-sans">Что мы предлагаем</p>
+          <p className="text-primary text-base tracking-[0.4em] uppercase mb-4 font-sans">Что мы предлагаем</p>
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-charcoal mb-5 tracking-wide">Наши услуги</h2>
           <div className="gold-divider w-20 mx-auto mb-6"></div>
           <p className="text-charcoal/60 max-w-xl mx-auto text-base leading-relaxed">
@@ -532,7 +532,7 @@ function Services() {
                   <div className="icon-elegant mb-4">
                     <LuxuryIcon name={service.icon} className="w-5 h-5" />
                   </div>
-                  <h3 className="font-serif text-2xl lg:text-3xl font-semibold text-charcoal mb-3 group-hover:text-accent-dark transition-colors leading-snug">
+                  <h3 className="font-serif text-2xl lg:text-3xl font-semibold text-charcoal mb-3 group-hover:text-primary-dark transition-colors leading-snug">
                     {service.title}
                   </h3>
                   <p className="text-charcoal/55 text-base leading-relaxed">
@@ -561,14 +561,14 @@ function About() {
               className="w-full h-[450px] lg:h-[550px] object-cover rounded-sm"
             />
             <div className="absolute -bottom-6 -right-4 md:-right-6 bg-charcoal text-white p-6 rounded-sm">
-              <p className="font-serif text-3xl font-semibold text-accent-light">25+</p>
+              <p className="font-serif text-3xl font-semibold text-primary-light">25+</p>
               <p className="text-base tracking-[0.2em] uppercase text-white/60 mt-1 font-sans">лет опыта</p>
             </div>
           </div>
 
           {/* Text */}
           <div>
-            <p className="text-accent text-base tracking-[0.4em] uppercase mb-4 font-sans">О нашем ателье</p>
+            <p className="text-primary text-base tracking-[0.4em] uppercase mb-4 font-sans">О нашем ателье</p>
             <h2 className="font-serif text-4xl md:text-5xl font-semibold text-charcoal mb-6 leading-tight tracking-wide">
               Искусство создания совершенства
             </h2>
@@ -588,15 +588,15 @@ function About() {
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
               <div className="text-center p-4 sm:p-5 bg-white/60 border border-sand rounded-sm">
-                <p className="font-serif text-xl sm:text-2xl font-semibold text-accent-dark">1998</p>
+                <p className="font-serif text-xl sm:text-2xl font-semibold text-primary-dark">1998</p>
                 <p className="text-xs sm:text-sm text-charcoal/50 mt-1 tracking-wider uppercase font-sans">Год основания</p>
               </div>
               <div className="text-center p-4 sm:p-5 bg-white/60 border border-sand rounded-sm">
-                <p className="font-serif text-xl sm:text-2xl font-semibold text-accent-dark">10 000+</p>
+                <p className="font-serif text-xl sm:text-2xl font-semibold text-primary-dark">10 000+</p>
                 <p className="text-xs sm:text-sm text-charcoal/50 mt-1 tracking-wider uppercase font-sans">Наименований</p>
               </div>
               <div className="text-center p-4 sm:p-5 bg-white/60 border border-sand rounded-sm">
-                <p className="font-serif text-xl sm:text-2xl font-semibold text-accent-dark">4</p>
+                <p className="font-serif text-xl sm:text-2xl font-semibold text-primary-dark">4</p>
                 <p className="text-xs sm:text-sm text-charcoal/50 mt-1 tracking-wider uppercase font-sans">Страны</p>
               </div>
             </div>
@@ -612,7 +612,7 @@ function Fabrics() {
     <section id="ткани" className="py-24 md:py-32 bg-ivory">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <p className="text-accent text-base tracking-[0.4em] uppercase mb-4 font-sans">Салон тканей</p>
+          <p className="text-primary text-base tracking-[0.4em] uppercase mb-4 font-sans">Салон тканей</p>
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-charcoal mb-5 tracking-wide">Ткани из Европы</h2>
           <div className="gold-divider w-20 mx-auto mb-6"></div>
           <p className="text-charcoal/60 max-w-xl mx-auto text-base leading-relaxed">
@@ -655,7 +655,7 @@ function Gallery() {
     <section id="работы" className="py-24 md:py-32 bg-warm-gray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <p className="text-accent text-base tracking-[0.4em] uppercase mb-4 font-sans">Портфолио</p>
+          <p className="text-primary text-base tracking-[0.4em] uppercase mb-4 font-sans">Портфолио</p>
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-charcoal mb-5 tracking-wide">Наши работы</h2>
           <div className="gold-divider w-20 mx-auto mb-6"></div>
           <p className="text-charcoal/60 max-w-xl mx-auto text-base leading-relaxed">
@@ -685,19 +685,19 @@ function Gallery() {
 
 function Contacts() {
   return (
-    <section id="контакты" className="py-24 md:py-32 bg-charcoal text-white">
+    <section id="контакты" className="py-24 md:py-32 bg-gradient-to-b from-cream to-gold-soft">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <p className="text-accent-light text-base tracking-[0.4em] uppercase mb-4 font-sans">Свяжитесь с нами</p>
-          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-white mb-5 tracking-wide">Контакты</h2>
+          <p className="text-primary text-base tracking-[0.4em] uppercase mb-4 font-sans">Свяжитесь с нами</p>
+          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-charcoal mb-5 tracking-wide">Контакты</h2>
           <div className="gold-divider w-20 mx-auto mb-6"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Contact info */}
           <div>
-            <h3 className="font-serif text-2xl font-semibold mb-6 text-white">Будем рады видеть вас</h3>
-            <p className="text-white/50 leading-relaxed mb-10 text-base">
+            <h3 className="font-serif text-2xl font-semibold mb-6 text-charcoal">Будем рады видеть вас</h3>
+            <p className="text-charcoal/70 leading-relaxed mb-10 text-base">
               Запишитесь на консультацию, и наши мастера помогут создать идеальный образ. 
               Мы работаем по предварительной записи, чтобы уделить каждому клиенту максимум внимания.
             </p>
@@ -708,8 +708,8 @@ function Contacts() {
                   <LuxuryIcon name="location" className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="font-sans text-base tracking-wider uppercase text-white/80 mb-1">Адрес</p>
-                  <p className="text-white/50 text-base">г. Алматы, Казахстан</p>
+                  <p className="font-sans text-base tracking-wider uppercase text-charcoal/80 mb-1">Адрес</p>
+                  <p className="text-charcoal/70 text-base">г. Алматы, Казахстан</p>
                 </div>
               </div>
 
@@ -718,8 +718,8 @@ function Contacts() {
                   <LuxuryIcon name="phone" className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="font-sans text-base tracking-wider uppercase text-white/80 mb-1">Телефон</p>
-                  <p className="text-white/50 text-base">Свяжитесь с нами для записи</p>
+                  <p className="font-sans text-base tracking-wider uppercase text-charcoal/80 mb-1">Телефон</p>
+                  <p className="text-charcoal/70 text-base">Свяжитесь с нами для записи</p>
                 </div>
               </div>
 
@@ -728,8 +728,8 @@ function Contacts() {
                   <LuxuryIcon name="clock" className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="font-sans text-base tracking-wider uppercase text-white/80 mb-1">Время работы</p>
-                  <p className="text-white/50 text-base">Пн-Сб: по предварительной записи</p>
+                  <p className="font-sans text-base tracking-wider uppercase text-charcoal/80 mb-1">Время работы</p>
+                  <p className="text-charcoal/70 text-base">Пн-Сб: по предварительной записи</p>
                 </div>
               </div>
 
@@ -738,8 +738,8 @@ function Contacts() {
                   <LuxuryIcon name="globe" className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="font-sans text-base tracking-wider uppercase text-white/80 mb-1">Сайт</p>
-                  <a href="https://premium-fabric.kz" target="_blank" rel="noopener noreferrer" className="text-accent-light text-base hover:text-accent transition-colors">
+                  <p className="font-sans text-base tracking-wider uppercase text-charcoal/80 mb-1">Сайт</p>
+                  <a href="https://premium-fabric.kz" target="_blank" rel="noopener noreferrer" className="text-primary text-base hover:text-primary-dark transition-colors">
                     premium-fabric.kz
                   </a>
                 </div>
@@ -748,7 +748,7 @@ function Contacts() {
           </div>
 
           {/* Map */}
-          <div className="rounded-sm overflow-hidden border border-white/10">
+          <div className="rounded-sm overflow-hidden border border-primary/20 shadow-lg">
             <iframe
               src="https://yandex.ru/map-widget/v1/?ll=76.950701%2C43.228412&z=17&um=constructor%3A2cb65235e7fb138a466d8486c71237c146b7bb5ed61baa3bdec7caed109fcedb"
               width="100%"
@@ -767,17 +767,17 @@ function Contacts() {
 
 function Footer() {
   return (
-    <footer className="bg-anthracite py-10 border-t border-white/5">
+    <footer className="gradient-footer py-10 border-t border-primary-light/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <span className="font-sans text-lg font-semibold text-accent-light tracking-[0.15em]">PREMIUM FABRIC</span>
+            <span className="font-sans text-lg font-semibold text-primary-dark tracking-[0.15em]">PREMIUM FABRIC</span>
           </div>
-          <p className="text-base text-white/30 text-center tracking-wider font-sans">
+          <p className="text-base text-charcoal/60 text-center tracking-wider font-sans">
             © 1998–2026 Ателье Премиум класса · Алматы · Все права защищены
           </p>
           <div className="flex gap-6">
-            <a href="https://premium-fabric.kz" target="_blank" rel="noopener noreferrer" className="text-base text-white/30 hover:text-accent-light transition-colors tracking-wider font-sans">
+            <a href="https://premium-fabric.kz" target="_blank" rel="noopener noreferrer" className="text-base text-charcoal/60 hover:text-primary-dark transition-colors tracking-wider font-sans">
               premium-fabric.kz
             </a>
           </div>

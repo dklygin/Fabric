@@ -1,16 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  --color-accent: #8C56D4;
-  --color-accent-light: #DC95FF;
-  --color-accent-dark: #6B3FB8;
-  --color-accent-soft: #FFBEFB;
-  --color-cream: #FFF4BF;
-  --color-ivory: #FFFAED;
-  --color-charcoal: #2D1B4E;
-  --color-anthracite: #1A0F2E;
-  --color-warm-gray: #F5E6FF;
-  --color-sand: #E8D5F5;
+  --color-primary: #C58F3D;
+  --color-primary-light: #E8D5A3;
+  --color-primary-dark: #8B6914;
+  --color-accent: #6B4F0F;
+  --color-accent-light: #D4A854;
+  --color-accent-dark: #4A3708;
+  --color-cream: #FDF9F0;
+  --color-ivory: #FDFBF7;
+  --color-charcoal: #3D342C;
+  --color-anthracite: #2A241E;
+  --color-warm-gray: #F5EFE4;
+  --color-sand: #E8DCC8;
+  --color-gold-soft: #F5E6C8;
+  --color-gold-lighter: #FAF3E0;
   --font-serif: 'Cormorant Garamond', 'Times New Roman', serif;
   --font-sans: 'Montserrat', 'Helvetica Neue', sans-serif;
 }
@@ -37,7 +41,6 @@ body {
   font-family: var(--font-sans);
 }
 
-/* Luxury animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -62,23 +65,20 @@ body {
   animation: fadeIn 1s ease-out forwards;
 }
 
-/* Accent divider */
 .gold-divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+  background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
 }
 
-/* Elegant card hover */
 .luxury-card {
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .luxury-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(45, 27, 78, 0.08);
+  box-shadow: 0 20px 40px rgba(197, 143, 61, 0.1);
 }
 
-/* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -88,23 +88,31 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-accent);
+  background: var(--color-primary);
   border-radius: 3px;
 }
 
-/* Elegant icon container */
 .icon-elegant {
   width: 48px;
   height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--color-accent);
-  color: var(--color-accent);
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
   transition: all 0.3s ease;
 }
 
 .icon-elegant:hover {
-  background-color: var(--color-accent);
+  background-color: var(--color-primary);
   color: white;
+}
+
+/* Градиенты для header и footer */
+.gradient-header {
+  background: linear-gradient(180deg, #FDFBF7 0%, #F5E6C8 100%);
+}
+
+.gradient-footer {
+  background: linear-gradient(180deg, #F5E6C8 0%, #E8D5A3 50%, #C58F3D 100%);
 }
