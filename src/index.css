@@ -9,10 +9,12 @@
   --color-accent-dark: #4A3708;
   --color-cream: #FDF9F0;
   --color-ivory: #FDFBF7;
-  --color-charcoal: #2D2416;
-  --color-anthracite: #1A1510;
+  --color-charcoal: #3D342C;
+  --color-anthracite: #2A241E;
   --color-warm-gray: #F5EFE4;
   --color-sand: #E8DCC8;
+  --color-gold-soft: #F5E6C8;
+  --color-gold-lighter: #FAF3E0;
   --font-serif: 'Cormorant Garamond', 'Times New Roman', serif;
   --font-sans: 'Montserrat', 'Helvetica Neue', sans-serif;
 }
@@ -74,7 +76,7 @@ body {
 
 .luxury-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(45, 36, 22, 0.12);
+  box-shadow: 0 20px 40px rgba(197, 143, 61, 0.1);
 }
 
 ::-webkit-scrollbar {
@@ -104,4 +106,13 @@ body {
 .icon-elegant:hover {
   background-color: var(--color-primary);
   color: white;
+}
+
+/* Градиенты для header и footer */
+.gradient-header {
+  background: linear-gradient(180deg, #FDFBF7 0%, #F5E6C8 100%);
+}
+
+.gradient-footer {
+  background: linear-gradient(180deg, #F5E6C8 0%, #E8D5A3 50%, #C58F3D 100%);
 }

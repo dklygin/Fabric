@@ -259,7 +259,7 @@ function Header() {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'bg-ivory border-b border-sand' : 'bg-ivory/95 backdrop-blur-sm'}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'gradient-header border-b border-primary-light/30' : 'gradient-header/95 backdrop-blur-sm'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <a href="#" className="flex items-center gap-2">
@@ -297,7 +297,7 @@ function Header() {
 
       {/* Mobile menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-ivory border-t border-sand">
+        <div className="md:hidden gradient-header border-t border-primary-light/30">
           <div className="px-6 py-6 space-y-4">
             {navItems.map((item) => (
               <a
@@ -767,17 +767,17 @@ function Contacts() {
 
 function Footer() {
   return (
-    <footer className="bg-anthracite py-10 border-t border-white/5">
+    <footer className="gradient-footer py-10 border-t border-primary-light/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <span className="font-sans text-lg font-semibold text-primary-light tracking-[0.15em]">PREMIUM FABRIC</span>
+            <span className="font-sans text-lg font-semibold text-primary-dark tracking-[0.15em]">PREMIUM FABRIC</span>
           </div>
-          <p className="text-base text-white/30 text-center tracking-wider font-sans">
+          <p className="text-base text-charcoal/60 text-center tracking-wider font-sans">
             © 1998–2026 Ателье Премиум класса · Алматы · Все права защищены
           </p>
           <div className="flex gap-6">
-            <a href="https://premium-fabric.kz" target="_blank" rel="noopener noreferrer" className="text-base text-white/30 hover:text-primary-light transition-colors tracking-wider font-sans">
+            <a href="https://premium-fabric.kz" target="_blank" rel="noopener noreferrer" className="text-base text-charcoal/60 hover:text-primary-dark transition-colors tracking-wider font-sans">
               premium-fabric.kz
             </a>
           </div>
