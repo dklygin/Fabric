@@ -588,16 +588,16 @@ function About() {
             
             <div className="grid grid-cols-3 gap-4">
               <div className="text-center p-5 bg-white/60 border border-sand rounded-sm">
-                <p className="font-serif text-3xl font-semibold text-accent-dark">1998</p>
-                <p className="text-base text-charcoal/50 mt-1 tracking-wider uppercase font-sans">Год основания</p>
+                <p className="font-serif text-2xl font-semibold text-accent-dark">1998</p>
+                <p className="text-sm text-charcoal/50 mt-1 tracking-wider uppercase font-sans">Год основания</p>
               </div>
               <div className="text-center p-5 bg-white/60 border border-sand rounded-sm">
-                <p className="font-serif text-3xl font-semibold text-accent-dark">10 000+</p>
-                <p className="text-base text-charcoal/50 mt-1 tracking-wider uppercase font-sans">Наименований</p>
+                <p className="font-serif text-2xl font-semibold text-accent-dark">10 000+</p>
+                <p className="text-sm text-charcoal/50 mt-1 tracking-wider uppercase font-sans">Наименований</p>
               </div>
               <div className="text-center p-5 bg-white/60 border border-sand rounded-sm">
-                <p className="font-serif text-3xl font-semibold text-accent-dark">4</p>
-                <p className="text-base text-charcoal/50 mt-1 tracking-wider uppercase font-sans">Страны</p>
+                <p className="font-serif text-2xl font-semibold text-accent-dark">4</p>
+                <p className="text-sm text-charcoal/50 mt-1 tracking-wider uppercase font-sans">Страны</p>
               </div>
             </div>
           </div>
